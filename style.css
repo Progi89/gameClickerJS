@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --primary-color: #d4a373;
+    --secondary-color: #fefae0;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+}
+
+.screen.visible {
+    display: flex;
+}
+
+.btn {
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.sweets-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sweets-list li {
+    margin: 10px;
+}
+
+.choose-sweet-btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+}
+
+.choose-sweet-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.choose-sweet-btn img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.game-container {
+    position: relative;
+}
+
+.time,
+.score {
+    position: absolute;
+    top: 20px;
+}
+
+.time {
+    left: 20px;
+}
+
+.score {
+    right: 20px;
+}
+
+.sweet {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}

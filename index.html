@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catch Game</title>
+</head>
+
+<body>
+    <!-- первый экран  -->
+    <div class="screen visible">
+        <h2>Игра "Съешь вкусняшку"</h2>
+        <button class="btn" id="start-btn">Начать игру</button>
+    </div>
+    <!-- второй экран -->
+    <div class="screen ">
+        <h2>Выбери любимую вкусняшку</h2>
+        <ul class="sweets-list">
+            <li>
+                <button class="choose-sweet-btn">
+                    <p>Пончик</p>
+                    <img src="/assets/donut.png" alt="Пончик">
+                </button>
+            </li>
+            <li>
+                <button class="choose-sweet-btn">
+                    <p>Торт</p>
+                    <img src="/assets/cake-slice.png" alt="Торт">
+                </button>
+            </li>
+            <li>
+                <button class="choose-sweet-btn">
+                    <p>Конфета</p>
+                    <img src="/assets/candy.png" alt="Конфета">
+                </button>
+            </li>
+            <li>
+                <button class="choose-sweet-btn">
+                    <p>Кекс</p>
+                    <img src="/assets/cupcake.png" alt="Кекс">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- третий экран игровой -->
+    <div class="screen" id="game-container">
+        <h3 id="time" class="time">Время: 0</h3>
+        <h3 id="score" class="score">Счет: 0</h3>
+    </div>
+
+    <audio id="bite" src="/assets/bite.mp3"></audio>
+    <script src="/script.js"></script>
+</body>
+
+</html>
